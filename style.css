@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  grid-template-rows: auto;
+}
+
+#cover,
+#about-me,
+#portfolio,
+#experience {
+  border: 1 dotted gray;
+}
+
+/* Cover */
+#cover {
+  display: grid;
+  grid-template-rows: auto;
+
+  padding: 20px;
+  background-color: rgb(47, 158, 123);
+  color: white;
+}
+
+#cover header {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  justify-content: center;
+}
+#cover header nav {
+  justify-self: right;
+}
+
+#cover header nav ul {
+  display: grid;
+  list-style: none;
+  grid-template-columns: repeat(3, 80px);
+  grid-gap: 10px;
+}
+
+#cover header nav ul li {
+  background-color: rgb(228, 238, 228);
+  color: rgb(47, 158, 123);
+  border-radius: 5px;
+  padding: 5px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.title {
+  display: grid;
+  grid-template:
+    ". title ." auto
+    ". lead ." auto/
+    1fr 65ch 1fr;
+  padding: 56px;
+}
+
+.title h1 {
+  grid-area: title;
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.title p {
+  grid-area: lead;
+}
+
+/* Strong and em */
+strong {
+  color: rgb(29, 29, 94);
+}
+
+em {
+  text-decoration: underline;
+  text-decoration-color: rgb(29, 29, 94);
+}
