@@ -9,13 +9,6 @@ body {
   grid-template-rows: 500px auto;
 }
 
-#cover,
-#about-me,
-#portfolio,
-#experience {
-  border: 1 dotted gray;
-}
-
 /* Cover */
 #cover {
   display: grid;
@@ -49,6 +42,7 @@ header nav ul li {
   padding: 5px;
   text-align: center;
   font-weight: bold;
+  box-shadow: 3px 3px 10px rgb(121, 121, 121);
 }
 
 .title {
@@ -68,6 +62,20 @@ header nav ul li {
 
 .title p {
   grid-area: lead;
+}
+
+header nav ul a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header nav ul a:hover {
+  text-decoration: underline;
+  font-size: 110%;
+}
+
+header nav ul a:visited {
+  color: inherit;
 }
 
 /* Strong and em */
@@ -112,7 +120,7 @@ em {
 /* portfolio */
 .portfo {
   display: grid;
-  background-color: rgb(145, 233, 229);
+  background-color: rgb(47, 158, 123);
   padding: 30px;
   grid-template:
     "porfo-title porfo-title porfo-title" 50px
@@ -190,7 +198,7 @@ article a.github {
 
 /* Footer */
 footer {
-  background-color: navy;
+  background-color: rgb(47, 158, 123);
   color: cornsilk;
   padding: 5px 15px;
 }
