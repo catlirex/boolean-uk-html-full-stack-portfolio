@@ -108,3 +108,56 @@ em {
 .aboutme ul {
   columns: 2;
 }
+
+/* portfolio */
+.portfo {
+  display: grid;
+  background-color: rgb(145, 233, 229);
+  padding: 30px;
+  grid-template:
+    "porfo-title porfo-title porfo-title" 50px
+    "project1 project2 project3" auto/
+    1fr 1fr 1fr;
+
+  grid-gap: 10px;
+}
+
+.portfo h2 {
+  grid-area: porfo-title;
+  justify-self: center;
+}
+
+article {
+  background-color: cornsilk;
+  padding: 20px;
+  border: 5px solid rgb(170, 6, 96);
+  border-radius: 10px;
+}
+
+.project1 {
+  grid-area: project1;
+}
+.project2 {
+  grid-area: project2;
+}
+.project3 {
+  grid-area: project3;
+}
+
+article a.read-more {
+  display: block;
+  background-color: rgb(170, 6, 96);
+  text-align: center;
+  padding: 5px;
+  margin-top: 10px;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+article a.github {
+  display: block;
+  color: rgb(170, 6, 96);
+  text-align: center;
+  margin-top: 10px;
+}
