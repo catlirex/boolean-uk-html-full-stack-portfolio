@@ -26,23 +26,23 @@ body {
   color: white;
 }
 
-#cover header {
+header {
   display: grid;
   grid-template-columns: 200px 1fr;
   justify-content: center;
 }
-#cover header nav {
+header nav {
   justify-self: right;
 }
 
-#cover header nav ul {
+header nav ul {
   display: grid;
   list-style: none;
-  grid-template-columns: repeat(3, 80px);
+  grid-template-columns: repeat(3, 100px);
   grid-gap: 10px;
 }
 
-#cover header nav ul li {
+header nav ul li {
   background-color: rgb(228, 238, 228);
   color: rgb(47, 158, 123);
   border-radius: 5px;
@@ -160,4 +160,37 @@ article a.github {
   color: rgb(170, 6, 96);
   text-align: center;
   margin-top: 10px;
+}
+
+/* Experience */
+.job-history {
+  display: grid;
+  grid-template:
+    ".h2." 50px
+    ". job ." auto/
+    1fr 65ch 1fr;
+  background-color: cornsilk;
+  padding: 50px;
+}
+
+.job-history h2 {
+  grid-area: h2;
+  justify-self: center;
+}
+
+.job {
+  grid-area: job;
+  width: 65ch;
+  margin: 10px;
+}
+
+.job-history h3 {
+  margin-top: 20px;
+}
+
+/* Footer */
+footer {
+  background-color: navy;
+  color: cornsilk;
+  padding: 5px 15px;
 }
