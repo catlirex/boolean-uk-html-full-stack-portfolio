@@ -2,17 +2,19 @@
   margin: 0;
   box-sizing: border-box;
   line-height: 1.5;
+  scroll-behavior: smooth;
+  font-family: "Montserrat", sans-serif;
 }
 
 body {
   display: grid;
-  grid-template-rows: 500px auto;
+  grid-template-rows: 100vh auto;
 }
 
 /* Cover */
 #cover {
   display: grid;
-  grid-template-rows: auto;
+  grid-template-rows: 100px auto;
 
   padding: 20px;
   background-color: rgb(47, 158, 123);
@@ -22,10 +24,9 @@ body {
 header {
   display: grid;
   grid-template-columns: 200px 1fr;
-  justify-content: center;
 }
 header nav {
-  justify-self: right;
+  justify-self: flex-end;
 }
 
 header nav ul {
@@ -54,6 +55,10 @@ header nav ul li {
   padding: 56px;
 }
 
+header h2 {
+  font-size: 1rem;
+}
+
 .title h1 {
   grid-area: title;
   font-size: 3rem;
@@ -62,6 +67,7 @@ header nav ul li {
 
 .title p {
   grid-area: lead;
+  font-size: 1.2rem;
 }
 
 header nav ul a {
@@ -71,7 +77,6 @@ header nav ul a {
 
 header nav ul a:hover {
   text-decoration: underline;
-  font-size: 110%;
 }
 
 header nav ul a:visited {
@@ -86,6 +91,7 @@ strong {
 em {
   text-decoration: underline;
   text-decoration-color: rgb(29, 29, 94);
+  text-underline-position: under;
 }
 
 /* ABOUT ME */
@@ -118,9 +124,12 @@ em {
 }
 
 /* portfolio */
+#portfolio {
+  background-color: rgb(47, 158, 123);
+}
 .portfo {
   display: grid;
-  background-color: rgb(47, 158, 123);
+
   padding: 30px;
   grid-template:
     "porfo-title porfo-title porfo-title" 50px
@@ -140,6 +149,10 @@ article {
   padding: 20px;
   border: 5px solid rgb(170, 6, 96);
   border-radius: 10px;
+}
+
+article p {
+  height: 250px;
 }
 
 .project1 {
@@ -171,13 +184,17 @@ article a.github {
 }
 
 /* Experience */
+#experience {
+  background-color: cornsilk;
+}
+
 .job-history {
   display: grid;
   grid-template:
     ".h2." 50px
     ". job ." auto/
     1fr 65ch 1fr;
-  background-color: cornsilk;
+
   padding: 50px;
 }
 
