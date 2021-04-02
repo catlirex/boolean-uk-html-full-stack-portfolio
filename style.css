@@ -219,3 +219,23 @@ footer {
   color: cornsilk;
   padding: 5px 15px;
 }
+
+/* Responsive */
+@media only screen and (max-width: 600px) {
+  .portfo {
+    display: grid;
+
+    padding: 50px 100px;
+    grid-template:
+      "porfo-title " 50px
+      "project1"
+      "project2 "
+      "project3" auto/
+      1fr;
+    grid-gap: 10px;
+  }
+
+  article p {
+    height: 100px;
+  }
+}
